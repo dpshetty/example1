@@ -1,0 +1,9 @@
+--- # Learning about variables
+- hosts: webserver
+  remote_user: ans
+  become: yes
+  
+  tasks:
+
+    - name: Create a test template
+      template: src=test.j2 dest=/tmp/testfile mode=644

@@ -1,0 +1,8 @@
+---
+
+become: yes
+become__user: ans
+tasks:
+
+  - name: Create a test template
+    template: src=test dest=/tmp/testfile mode=644
